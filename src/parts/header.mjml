@@ -1,0 +1,9 @@
+<mj-wrapper padding="0">  
+  <mj-top-header
+    ligne-un="Un texte"
+    ligne-deux="POUR INFORMATION"/>
+  <mj-header-conseiller
+    var-email="jordan.gaudron@ca-briepicardie.fr">
+    Nous avons besoin d’actualiser rapidement vos coordonnées
+  </mj-header-conseiller>
+</mj-wrapper>

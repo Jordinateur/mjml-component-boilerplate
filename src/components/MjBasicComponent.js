@@ -6,7 +6,7 @@ registerDependencies({
   'mj-hero': ['mj-basic-component'],
   'mj-column': ['mj-basic-component'],
   // Tell the validator which tags are allowed as our component's children
-  'mj-basic-component': []
+  'mj-basic-component': [],
 })
 
 /*
@@ -20,9 +20,9 @@ export default class MjBasicComponent extends BodyComponent {
   // Tells the validator which attributes are allowed for mj-layout
   static allowedAttributes = {
     'stars-color': 'color',
-    'color': 'color',
+    color: 'color',
     'font-size': 'unit(px)',
-    'align': 'enum(left,right,center)',
+    align: 'enum(left,right,center)',
   }
 
   // What the name suggests. Fallback value for this.getAttribute('attribute-name').
@@ -30,7 +30,7 @@ export default class MjBasicComponent extends BodyComponent {
     'stars-color': 'yellow',
     color: 'black',
     'font-size': '12px',
-    'align': 'center',
+    align: 'center',
   }
 
   // This functions allows to define styles that can be used when rendering (see render() below)
@@ -42,11 +42,11 @@ export default class MjBasicComponent extends BodyComponent {
       },
       contentP: {
         'text-align': this.getAttribute('align'),
-        'font-size': '20px'
+        'font-size': '20px',
       },
       contentSpan: {
-        color: this.getAttribute('color')
-      }
+        color: this.getAttribute('color'),
+      },
     }
   }
 
@@ -58,24 +58,24 @@ export default class MjBasicComponent extends BodyComponent {
     return `
       <div
         ${this.htmlAttributes({ // this.htmlAttributes() is the recommended way to pass attributes to html tags
-          class: this.getAttribute('css-class'),
-          style: 'wrapperDiv' // This will add the 'wrapperDiv' attributes from getStyles() as inline style
-        })}
+    class: this.getAttribute('css-class'),
+    style: 'wrapperDiv', // This will add the 'wrapperDiv' attributes from getStyles() as inline style
+  })}
       >
       <p ${this.htmlAttributes({
-        style: 'contentP' // This will add the 'contentP' attributes from getStyles() as inline style
-      })}>
+    style: 'contentP', // This will add the 'contentP' attributes from getStyles() as inline style
+  })}>
         <span>★</span>
         <span
           ${this.htmlAttributes({
-            style: 'contentSpan' // This will add the 'contentSpan' attributes from getStyles() as inline style
-          })}
+    style: 'contentSpan', // This will add the 'contentSpan' attributes from getStyles() as inline style
+  })}
         >
           ${this.getContent()}
         </span>
         <span>★</span>
       </p>
       </div>
-		`
+  `
   }
 }
