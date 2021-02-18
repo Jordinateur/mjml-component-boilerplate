@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "start_ent": "gulp --marche entreprise",
     "watch": "gulp watch",
     "build": "gulp build",
     "lint": "eslint components"
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "gulp-server-io": "^1.5.1",
+    "he": "^1.2.0",
     "lodash": "^4.17.15",
     "mjml": "^4.7.1"
   }

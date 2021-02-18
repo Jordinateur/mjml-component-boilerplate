@@ -2,10 +2,16 @@
   <mj-head>
     <mj-attributes>
       <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-body background-color="#ddd" />
     </mj-attributes>
+    <!-- Part Conf -->
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+    </mj-attributes>
+    <!-- Part Conf -->
     <mj-html-attributes>
       <mj-selector path=".unsubscribe a">
-        <mj-html-attribute name="data-ref-unsub"></mj-html-attribute>
+        <mj-html-attribute name="data-msys-unsubscribe">1</mj-html-attribute>
       </mj-selector>
     </mj-html-attributes>
     <mj-breakpoint width="480px" />
@@ -24,7 +30,7 @@
     </mj-style>
     <mj-include path="parts/global.mjml" />    
   </mj-head>
-  <mj-body background-color="#ddd">
+  <mj-body>
     <mj-include path="parts/header.mjml" />
     <mj-include path="parts/body.mjml" />
     <mj-include path="parts/footer.mjml" />

@@ -24,7 +24,7 @@ export default class MjFooter extends BodyComponent {
           background-color="none"
           padding="0"
           inner-padding="2px 0"
-          href="<<LIBELLE>>">
+          href="tel:<<LIBELLE_60_4>>">
             <img src="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/telproxi.png" />
           </mj-button>
         </mj-column>           
@@ -33,9 +33,9 @@ export default class MjFooter extends BodyComponent {
             Votre Conseiller
           </mj-text>
           <mj-text padding-top="5px">
-            Saffa RAMRI <br />
-            01.60.05.96.00 <br />
-            Saffa.RAMRI@ca-briepicardie.fr 
+            <<LIBELLE_60_3>><br />
+            <<LIBELLE_60_4>><br />
+            <<LIBELLE_60_5>>
             </mj-text>          
           </mj-column>
       </mj-section>
@@ -45,7 +45,7 @@ export default class MjFooter extends BodyComponent {
           background-color="none"
           padding="0"
           inner-padding="2px 0"
-          href="<<LIBELLE>>">
+          href="https://www.ca-briepicardie.net/eds_agences.php?EDS=<<LIBELLE_60_10>>">
             <img src="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/locaproxi.png" />
           </mj-button>
         </mj-column>           
@@ -54,10 +54,10 @@ export default class MjFooter extends BodyComponent {
             Votre agence
           </mj-text>
           <mj-text padding-top="5px">
-            Champs Pyramides <br />
-            41 Boulevard De La Republique <br />
-            77420 CHAMPS SUR MARNE <br />
-            01.60.05.78.36 
+            <<LIBELLE_60_6>><br />
+            <<LIBELLE_60_8>><br />
+            <<LIBELLE_60_9>><br />
+            <<LIBELLE_60_7>>
           </mj-text>          
         </mj-column>
       </mj-section>
@@ -67,7 +67,7 @@ export default class MjFooter extends BodyComponent {
           background-color="none"
           padding="0"
           inner-padding="2px 0"
-          href="<<LIBELLE>>">
+          href="mailto:<<LIBELLE_60_5>>">
             <img src="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/emailproxi.png" />
           </mj-button>
         </mj-column>           
@@ -76,9 +76,9 @@ export default class MjFooter extends BodyComponent {
             Vos contacts
           </mj-text>
           <mj-text padding-top="5px">
-            Notre site Internet : www.ca-briepicardie.fr <br />
+            Notre site Internet : <a href="https://www.ca-briepicardie.fr" title="Crédit Agricole Brie Picardie">www.ca-briepicardie.fr</a> <br />
             <br />
-            Application : Ma banque
+            Application : <a href="https://www.ca-briepicardie.net/redirectapp?from=email" title="Ma banque">Ma banque</a>
           </mj-text>          
         </mj-column>
       </mj-section>
@@ -92,7 +92,7 @@ export default class MjFooter extends BodyComponent {
                 inner-padding="0"
                 font-size="11px"
                 text-decoration="underline"
-                href="<<_PageMiroir>>">
+                href="<<PARAM_LIEN_DESABONNEMENT>>">
             Cliquez ici pour vous désabonner aux e-mails du Crédit Agricole
           </mj-button>             
         </mj-column>

@@ -1,6 +1,6 @@
 <mj-wrapper padding="0">  
   <mj-top-header
-    ligne-un="Un texte"
+    ligne-un="Règlementaire"
     ligne-deux="POUR INFORMATION"/>
   <mj-header-conseiller
     var-email="jordan.gaudron@ca-briepicardie.fr">

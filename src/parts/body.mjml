@@ -2,7 +2,7 @@
   <mj-section>
     <mj-column width="100%">
       <mj-text padding="4px 20px">
-        Monsieur NAIN ,<br />
+        <<LIBELLE_60_1>> <<LIBELLE_60_2>>,<br />
         <br />
         <br />
         La connexion à votre application Ma Banque<sup>1</sup> ne pourra bientôt plus se faire sans vos données actualisées.<br />
@@ -12,9 +12,9 @@
         <br />
         Voici votre situation actuelle :
         <br />
-        adresse email :<br />
-        numéro de portable : 06 ** ** 42 70<br />
-        numéro de portable fiabilisé : non<br />
+        - adresse email : <<EMAIL>><br />
+        - numéro de portable : <<LIBELLE_60_11>><br />
+        - numéro de portable fiabilisé : <<LIBELLE_60_12>><br />
         <br />
         Nous vous demandons donc de bien vouloir actualiser vos données :<br />
         <br />
@@ -26,20 +26,20 @@
         <br />
       </mj-text>
     </mj-column>  
-  </mj-section>
+  <!-- </mj-section>
   <mj-row-buttons>
     <mj-cta 
       text="Souscrire à un truc"
       width="45%"/>
     <mj-cta width="40%"/>
   </mj-row-buttons>
-  <mj-section>
+  <mj-section> -->
     <mj-column width="100%">
       <mj-text padding="4px 20px">
         <br />
         À bientôt,<br />
         <br />
-        Christelle TORDOIR<br />
+        <<LIBELLE_60_3>><br />
         Votre conseiller
       </mj-text>
     </mj-column>  

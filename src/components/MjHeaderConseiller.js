@@ -15,9 +15,9 @@ export default class MjHeaderConseiller extends BodyComponent {
   }
 
   static defaultAttributes = {
-    'var-tel': '<<LIBELLE>>',
-    'var-eds': '<<LIBELLE>>',
-    'var-email': '<<LIBELLE>>',
+    'var-tel': '<<LIBELLE_60_4>>',
+    'var-eds': '<<LIBELLE_60_10>>',
+    'var-email': '<<LIBELLE_60_5>>',
   }
 
   render() {

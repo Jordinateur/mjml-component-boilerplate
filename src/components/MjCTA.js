@@ -8,7 +8,6 @@ registerDependencies({
 
 export default class MjCTA extends BodyComponent {
   static endingTag = true
-
   /*
     We could obviously handle all the attributes accepted for Mj Section,
     Column, Image and Text, but let's keep it simple for this example.
