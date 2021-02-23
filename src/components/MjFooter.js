@@ -7,25 +7,42 @@ registerDependencies({
 })
 
 export default class MjFooter extends BodyComponent {
-  /*
-    We could obviously handle all the attributes accepted for Mj Section,
-    Column, Image and Text, but let's keep it simple for this example.
-  */
-  static allowedAttributes = {}
+  static allowedAttributes = {
+    'var-tel': 'string',
+    'logo-tel': 'string',
+    'var-agence': 'string',
+    'logo-agence': 'string',
+    'var-email': 'string',
+    'logo-email': 'string',
+    'var-conseiller': 'string'
+  }
 
-  static defaultAttributes = {}
+  static defaultAttributes = {
+    'var-tel': '<<LIBELLE_60_4>>',
+    'logo-tel': 'https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/telproxi.png',
+    'var-agence': '<<LIBELLE_60_10>>',
+    'logo-agence': 'https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/locaproxi.png',
+    'var-email': '<<LIBELLE_60_5>>',
+    'logo-email': 'https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/emailproxi.png',
+    'var-conseiller': '<<LIBELLE_60_3>>',
+    'var-email-conseiller': '<<LIBELLE_60_5>>',
+    'var-agence': '<<LIBELLE_60_6>>',
+    'var-rue': '<<LIBELLE_60_8>>',
+    'var-cp-ville': '<<LIBELLE_60_9>>',
+    'var-tel-agence': '<<LIBELLE_60_7>>'
+  }
 
   render() {
     return this.renderMJML(`
-      <mj-wrapper padding="0" padding-bottom="20px">
+      <mj-wrapper padding="0" padding-bottom="20px" class="footer">
       <mj-section background-color="#EDEDED" padding-bottom="5px">
         <mj-column width="15%">
           <mj-button
           background-color="none"
           padding="0"
           inner-padding="2px 0"
-          href="tel:<<LIBELLE_60_4>>">
-            <img src="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/telproxi.png" />
+          href="tel:${this.getAttribute('var-tel')}">
+            <img src="${this.getAttribute('logo-tel')}" />
           </mj-button>
         </mj-column>           
         <mj-column width="85%">
@@ -33,9 +50,9 @@ export default class MjFooter extends BodyComponent {
             Votre Conseiller
           </mj-text>
           <mj-text padding-top="5px">
-            <<LIBELLE_60_3>><br />
-            <<LIBELLE_60_4>><br />
-            <<LIBELLE_60_5>>
+            ${this.getAttribute('var-conseiller')}<br />
+            ${this.getAttribute('var-tel')}<br />
+            ${this.getAttribute('var-email')}
             </mj-text>          
           </mj-column>
       </mj-section>
@@ -45,8 +62,8 @@ export default class MjFooter extends BodyComponent {
           background-color="none"
           padding="0"
           inner-padding="2px 0"
-          href="https://www.ca-briepicardie.net/eds_agences.php?EDS=<<LIBELLE_60_10>>">
-            <img src="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/locaproxi.png" />
+          href="https://www.ca-briepicardie.net/eds_agences.php?EDS=${this.getAttribute('var-agence')}">
+            <img src="${this.getAttribute('logo-agence')}" />
           </mj-button>
         </mj-column>           
         <mj-column width="85%">
@@ -54,10 +71,10 @@ export default class MjFooter extends BodyComponent {
             Votre agence
           </mj-text>
           <mj-text padding-top="5px">
-            <<LIBELLE_60_6>><br />
-            <<LIBELLE_60_8>><br />
-            <<LIBELLE_60_9>><br />
-            <<LIBELLE_60_7>>
+            ${this.getAttribute('var-agence')}<br />
+            ${this.getAttribute('var-rue')}<br />
+            ${this.getAttribute('var-cp-ville')}<br />
+            ${this.getAttribute('var-tel-agence')}
           </mj-text>          
         </mj-column>
       </mj-section>
@@ -67,8 +84,8 @@ export default class MjFooter extends BodyComponent {
           background-color="none"
           padding="0"
           inner-padding="2px 0"
-          href="mailto:<<LIBELLE_60_5>>">
-            <img src="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/emailproxi.png" />
+          href="mailto:${this.getAttribute('var-email')}">
+            <img src="${this.getAttribute('logo-email')}" />
           </mj-button>
         </mj-column>           
         <mj-column width="85%">
@@ -76,7 +93,7 @@ export default class MjFooter extends BodyComponent {
             Vos contacts
           </mj-text>
           <mj-text padding-top="5px">
-            Notre site Internet : <a href="https://www.ca-briepicardie.fr" title="Crédit Agricole Brie Picardie">www.ca-briepicardie.fr</a> <br />
+            Notre site Internet : <a href="https://www.credit-agricole.fr/ca-briepicardie/particulier.html" title="Crédit Agricole Brie Picardie">www.credit-agricole.fr/ca-briepicardie</a> <br />
             <br />
             Application : <a href="https://www.ca-briepicardie.net/redirectapp?from=email" title="Ma banque">Ma banque</a>
           </mj-text>          

@@ -1,9 +1,18 @@
-<mj-wrapper padding="0">  
+<mj-wrapper padding="0">
   <mj-top-header
-    ligne-un="Règlementaire"
-    ligne-deux="POUR INFORMATION"/>
+    ligne-un="Réglementaire",
+    ligne-deux="POUR INFORMATION",
+    picto="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/haut_info.gif",
+    logo="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/Logo_Head_CABP.jpg",
+    />
   <mj-header-conseiller
-    var-email="jordan.gaudron@ca-briepicardie.fr">
+    var-tel="<<LIBELLE_60_4>>",
+    logo-tel="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/telproxi.png",
+    var-agence="<<LIBELLE_60_10>>",
+    logo-agence="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/locaproxi.png",
+    var-email="<<LIBELLE_60_5>>",
+    logo-email="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/emailproxi.png",
+    logo-conseiller="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/d_besoin_un.gif">
     Nous avons besoin d’actualiser rapidement vos coordonnées
   </mj-header-conseiller>
 </mj-wrapper>

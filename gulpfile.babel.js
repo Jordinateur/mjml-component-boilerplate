@@ -66,7 +66,7 @@ const compile = (cb) => {
         const fullPath = path.join(process.cwd(), compPath.replace(/^src\\components/, 'lib'))
         delete require.cache[fullPath]
         const component = require(fullPath).default
-        registerComponent()
+        registerComponent(component)
       })
       fs.readFile(path.normalize('./src/index.mjml'), 'utf8', (err, data) => {
         if (err) throw err
@@ -82,6 +82,10 @@ const compile = (cb) => {
         fs.writeFileSync(path.normalize('./dist/index.notencoded.html'), result.html)
       })
     })
+}
+
+const mjml = () => {
+
 }
 
 gulp.task('serve', () => {
@@ -107,6 +111,10 @@ gulp.task('dev', () => {
 
 gulp.task('watch', () => {
   compile()
-  return watch(['src/components/**/*.js', 'src/**/*.mjml','src/index.mjml'], compile)
+  return watch(['src/components/**/*.js','src/**/*.mjml','src/index.mjml'], compile)
+})
+gulp.task('mjml', () => {
+  mjml()
+  return watch(['src/**/*.mjml','src/index.mjml'], )
 })
 gulp.task('default', parallel(['watch','serve']))

@@ -42,7 +42,7 @@ export default class MjRowButtons extends BodyComponent {
 
   render() {
     return this.renderMJML(`
-      <mj-section padding="18px 30px">
+      <mj-section padding="18px 30px" class="row-button">
         ${this.renderButtons()}
       </mj-section>
     `)

@@ -16,6 +16,7 @@ export default class MjCTA extends BodyComponent {
     href: 'string',
     text: 'string',
     width: 'string',
+    fleche: 'string'
   }
 
   static defaultAttributes = {
@@ -23,6 +24,7 @@ export default class MjCTA extends BodyComponent {
     text: 'Prendre RDV',
     'background-color': '#E3E9EC',
     width: '80%',
+    fleche: 'https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/fleche_vert.gif'
   }
 
   ga(str) {
@@ -32,7 +34,7 @@ export default class MjCTA extends BodyComponent {
   render() {
     return this.renderMJML(`
         
-        <mj-group background-color="${this.ga('background-color')}" vertical-align="middle" padding="0 4px" width="${this.ga('width')}">
+        <mj-group background-color="${this.ga('background-color')}" vertical-align="middle" padding="0 4px" width="${this.ga('width')}" class="button-cta">
           <mj-column
             width="83%"
             padding="0"
@@ -65,7 +67,7 @@ export default class MjCTA extends BodyComponent {
               font-weight="bold"
               text-transform="uppercase"
               text-align="right">
-              <img src="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/fleche_vert.gif" height="49px" width="29px" />
+              <img src="${this.ga('fleche')}" height="49px" width="29px" />
             </mj-button>
           </mj-column>
         </mj-group>
