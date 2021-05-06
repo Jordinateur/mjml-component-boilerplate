@@ -1,23 +1,24 @@
  <mj-mentions>
   <mj-text font-size="11px" align="justify" padding="4px 16px">
-    (1) Téléchargement et accès gratuits à l’application Ma banque, hors coûts de communication selon opérateurs. L’utilisation de l’application nécessite la détention d’un terminal de communication compatible avec accès à Internet et l’abonnement au service Crédit Agricole En Ligne (service facturé selon le barème tarifaire en vigueur dans votre Caisse régionale).<br />
+    (1)Téléchargement et accès gratuits de l’application Paiement Mobile, hors coûts de communication selon opérateurs. L’utilisation de l’application est soumise à conditions et nécessite la détention d’une carte bancaire Crédit Agricole, d’un abonnement au service Crédit Agricole En Ligne et d’un terminal de communication compatible avec accès Internet. L’offre Paylib est soumise à conditions et réservée aux titulaires majeurs d’un compte de dépôt, d’une carte bancaire (sauf cartes privatives et cartes de la gamme « Business ») émise par le Crédit agricole attachée audit compte et d’un accès au service de banque en ligne du Crédit Agricole. Paylib permet d’effectuer des paiements sur tous les sites marchands affichant le logo PAYLIB et chez tous les commerçants acceptant le paiement sans contact. L’utilisation de la solution de paiement Paylib nécessite une adhésion spécifique ainsi que la détention d’un smartphone éligible et d’un numéro de téléphone fiabilisé.
+      <br />
     <br />
+    (2)L’application Paiement Mobile vous redirige automatiquement vers les services vous permettant de gérer les options de vos cartes de paiement.
+    <br />
+    <br />
+    (3)Disponible uniquement pour les propriétaires de smartphone Android disposant de la technologie NFC (Near Field Communication) pour les paiements de proximité chez les commerçants acceptant (i) la catégorie et la marque de votre carte éligible et (ii) le paiement en mode « sans contact » avec un terminal équipé de la technologie NFC. Attention, certaines limites de paiement peuvent s’appliquer en fonction du pays où vous êtes.
+    <br />
+    <br />
+    (4)Les plafonds appliqués sont ceux liés à l’utilisation de votre carte précisés dans le contrat de carte de paiement signé avec votre Caisse régionale.
+    <br />
+    <br />
+    (5)Paylib entre amis permet d’effectuer des virements de particuliers à particuliers titulaires d’un compte ouvert dans les livres d’un établissement de crédit situé en France. Dans la limite de 500 € par virement et 900 € par jour. Le transfert peut être instantanément exécuté uniquement si le bénéficiaire est enrôlé ou connu de Paylib. Dans le cas contraire, il sera exécuté sous 3 jours maximum.
+    <br />
+    <br />
+
     En application du Règlement du 27 avril 2016 relatif à la protection des données personnelles, et conformément à la loi Informatique et Libertés n°78-17 du 6 janvier 1978 modifiée vous disposez sur ces données de droits (i) d’accès, (ii) de rectification, (iii) d’effacement, (iv) de limitation et (v) de portabilité de vos données vers un prestataire tiers le cas échéant. Vous pouvez en outre vous opposer à tout moment au traitement de vos données ainsi qu’à l’envoi de nos messages. Vous pourrez faire valoir ces droits en contactant notre DPO à : dpo@ca-briepicardie.fr ou à DPO 500 rue Saint-Fuscien 80095 AMIENS CEDEX 3. Vous pouvez également introduire une réclamation auprès de la CNIL. <br />
     <br />
-    CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL BRIE PICARDIE - Société coopérative à capital variable, agréée en tant qu’établissement de crédit, dont le siège social est 500 rue Saint-Fuscien 80095 AMIENS CEDEX 3 - 487 625 436 RCS AMIENS. Société de courtage d’assurances immatriculée au Registre des Intermédiaires en Assurances sous le n° 07 022 607. www.ca-briepicardie.fr – 02/20 
+    CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL BRIE PICARDIE - Société coopérative à capital variable, agréée en tant qu’établissement de crédit, dont le siège social est 500 rue Saint-Fuscien 80095 AMIENS CEDEX 3 - 487 625 436 RCS AMIENS. Société de courtage d’assurances immatriculée au Registre des Intermédiaires en Assurances sous le n° 07 022 607. www.ca-briepicardie.fr – 05/21 
   </mj-text>
 </mj-mentions>
-<mj-footer
-  var-tel="<<LIBELLE_60_4>>",
-  logo-tel="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/telproxi.png",
-  var-agence="<<LIBELLE_60_10>>",
-  logo-agence="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/locaproxi.png",
-  var-email="<<LIBELLE_60_5>>",
-  logo-email="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/emailproxi.png",
-  var-conseiller="<<LIBELLE_60_3>>",
-  var-email-conseiller="<<LIBELLE_60_5>>",
-  var-agence="<<LIBELLE_60_6>>",
-  var-rue="<<LIBELLE_60_8>>",
-  var-cp-ville="<<LIBELLE_60_9>>",
-  var-tel-agence="<<LIBELLE_60_7>>">
-</mj-footer>
+<mj-footer></mj-footer>

@@ -9,6 +9,7 @@
     "./lib/MjHeaderConseiller.js",
     "./lib/MjContent.js",
     "./lib/MjMentions.js",
-    "./lib/MjFooter.js"
+    "./lib/MjFooter.js",
+    "./lib/MjBloc.js"
   ]
 }

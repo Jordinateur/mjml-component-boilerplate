@@ -2,45 +2,58 @@
   <mj-section>
     <mj-column width="100%">
       <mj-text padding="4px 20px">
-        <<LIBELLE_60_1>> <<LIBELLE_60_2>>,<br />
+        Bonjour #LIBELLE_60_1# #LIBELLE_60_2#,<br />
         <br />
+        L’application Ma Carte devient <strong style="color: #1F8D9D">Paiement Mobile<sup>(1)</sup></strong> pour que vos achats soient <strong style="color: #1F8D9D">plus simples et plus rapides</strong>. En effet, payer avec son mobile c’est possible au Crédit Agricole et dans ce contexte sanitaire compliqué, c’est plus que rassurant !<br />
         <br />
-        La connexion à votre application Ma Banque<sup>1</sup> ne pourra bientôt plus se faire sans vos données actualisées.<br />
-        Ceci est une obligation résultant de la règlementation DSP2 visant à renforcer la sécurité des vos opérations en ligne.<br />
-        <br />
-        Or, nous constatons que nous ne disposons pas de votre adresse email et/ou de votre numéro de portable fiabilisé.<br />
-        <br />
-        Voici votre situation actuelle :
-        <br />
-        - adresse email : <<EMAIL>><br />
-        - numéro de portable : <<LIBELLE_60_11>><br />
-        - numéro de portable fiabilisé : <<LIBELLE_60_12>><br />
-        <br />
-        Nous vous demandons donc de bien vouloir actualiser vos données :<br />
-        <br />
-        1 - Votre adresse email :<br />
-        En vous connectant à votre espace connecté depuis notre site internet.<br />
-        Cliquez ensuite sur votre « Prénom NOM » en haut à droite, puis sur la rubrique « Mes infos personnelles » et « Gérer mes coordonnées ».<br />
-        <br />
-        2 - Votre numéro de portable et/ou sa fiabilisation : en vous rendant en agence (avec ou sans RDV) muni de votre pièce d’identité.<br />
-        <br />
+        Vous avez <strong style="color: #1F8D9D">toujours accès à la gestion des options</strong> de vos cartes de paiements<sup>(2)</sup>, (augmentation des plafonds, activation/désactivation du sans contact...) et pouvez dorénavant <strong style="color: #1F8D9D">accéder à l’historique</strong> de vos paiements mobiles.
+
+</mj-text>
+</mj-column>  
+</mj-section>
+<mj-bloc>
+  <mj-text color="#fff">
+    <strong>PAYER SANS CONTACT</strong>
+    en magasin avec votre smartphone<sup>(3)</sup> en un clin d’œil et même au-delà de 50€<sup>(4)</sup>.
+  </mj-text>
+</mj-bloc>
+<mj-bloc
+  var-picto="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/chrono.jpg">
+  <mj-text color="#fff">
+    <strong>REMBOURSER INSTANTANÉMENT<sup>(5)</sup></strong>
+    vos proches grâce à leur numéro de téléphone.
+  </mj-text>
+</mj-bloc>
+<mj-bloc
+var-picto="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/coffre.jpg">
+  <mj-text color="#fff">
+    <strong>EFFECTUER VOS ACHATS SUR INTERNET</strong>
+    rapidement et de manière sécurisée, sans avoir à saisir vos coordonnées bancaires sur les sites commerçants proposant le service Paylib.
+  </mj-text>
+</mj-bloc>
+<mj-section>
+<mj-column>  
+    <mj-text padding="4px 20px">
+    Pour profiter de tous les services de l’application Paiement Mobile, il vous suffit de mettre à jour votre application Ma Carte et de vous laisser guider.
+    
       </mj-text>
     </mj-column>  
-  <!-- </mj-section>
+  </mj-section>
   <mj-row-buttons>
     <mj-cta 
-      text="Souscrire à un truc"
-      width="45%"/>
-    <mj-cta width="40%"/>
+    text="VOIR LA VIDEO DE PRÉSENTATION"
+    href="https://www.credit-agricole.fr/ca-briepicardie/particulier/compte/paiement-mobile/paylib.html"/>
   </mj-row-buttons>
-  <mj-section> -->
-    <mj-column width="100%">
-      <mj-text padding="4px 20px">
-        <br />
-        À bientôt,<br />
-        <br />
-        <<LIBELLE_60_3>><br />
-        Votre conseiller
+  <mj-section>
+    <mj-column>  
+   <mj-text>
+
+
+À très bientôt,<br />
+#LIBELLE_60_3#<br />
+Votre conseiller
+     
+
       </mj-text>
     </mj-column>  
   </mj-section>
