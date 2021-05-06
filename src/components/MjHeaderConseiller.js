@@ -34,8 +34,8 @@ export default class MjHeaderConseiller extends BodyComponent {
   render() {
     const id = ID();
     return this.renderMJML(`
-        <mj-section background-color="#99CC00" padding="0" text-align="left" class="header-conseiller">
-          <mj-group>
+        <mj-section background-color="#99CC00" padding="0" text-align="left" css-class="header-conseiller">
+          <mj-group css-class="wrap-to-hide">
           <mj-column background-color="#EDEDED" width="12%" vertical-align="middle">
             <mj-button
               background-color="none"
@@ -70,10 +70,10 @@ export default class MjHeaderConseiller extends BodyComponent {
               </mj-raw>
             </mj-button>
           </mj-column>
-          <mj-column css-class="hide_on_mobile" background-color="#99CC00" padding="0" padding-bottom="5px" vertical-align="middle" width="18%" >
+          <mj-column css-class="hide_on_mobile to-hide" background-color="#99CC00" padding="0" padding-bottom="5px" vertical-align="middle" width="18%" >
             <mj-image padding="0" padding-bottom="4px" src="${this.getAttribute('logo-conseiller')}" align="right" />
           </mj-column>
-          <mj-column css-class="w80p_on_mobile" inner-background-color="#fff" padding-left="0" vertical-align="middle" width="67%" background-color="#99CC00" inner-border-right="8px" padding-right="8px">
+          <mj-column css-class="w80p_on_mobile to-expand" inner-background-color="#fff" padding-left="0" vertical-align="middle" width="67%" background-color="#99CC00" inner-border-right="8px" padding-right="8px">
             <mj-text color="#1f8d9d" css-class="text-conseiller" padding="12px 8px"><h1 style="font-weight: normal;margin: 0;">${this.getContent()}</h1></mj-text>
           </mj-column>
           </mj-group>

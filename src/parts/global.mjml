@@ -15,13 +15,13 @@
     <mj-html-attribute name="data-msys-unsubscribe">1</mj-html-attribute>
   </mj-selector>
 </mj-html-attributes>
-<mj-breakpoint width="480px" />
+<mj-breakpoint width="768px" />
 <mj-style>
-@media only screen and (max-width: 480px) { 
-  .hide_on_mobile{ display: none !important; }
-  *[class~=hide_on_mobile] { display: none !important;}
-  .w80p_on_mobile { margin-left: 5% !important;width: 80% !important; }
-  *[class~=w80p_on_mobile] { margin-left: 5% !important;width: 80% !important; }
+@media only screen and (max-width: 768px) { 
+  *[class~=header-conseiller] *[class~=to-expand] { margin-left: 5% !important;width: 80% !important; }
+  .header-conseiller .to-expand { margin-left: 5% !important;width: 80% !important; }
+  *[class~=header-conseiller] *[class~=to-hide]  { display: none !important; }
+  .header-conseiller .to-hide { display: none !important; }
 }
 </mj-style>
 <mj-style inline="inline">

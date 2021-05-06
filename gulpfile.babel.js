@@ -85,7 +85,10 @@ const compile = (cb) => {
         })
         fs.writeFileSync(path.normalize('./dist/index.html'), he.encode(result.html, {
           allowUnsafeSymbols: true
-        }).replace(/#(\w*)#/g,"<<$1>>"))
+        })
+          .replace(/#(\w*)#/g,"<<$1>>")
+          .replace(/\s([\?\!])/g,"<<&nbsp;$1>>")
+        )
         /**
          * JSON
          */

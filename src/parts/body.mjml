@@ -2,34 +2,31 @@
   <mj-section>
     <mj-column width="100%">
       <mj-text padding="4px 20px">
-        Bonjour #LIBELLE_60_1# #LIBELLE_60_2#,<br />
+        #LIBELLE_60_1# #LIBELLE_60_2#,<br />
         <br />
-        L’application Ma Carte devient <strong style="color: #1F8D9D">Paiement Mobile<sup>(1)</sup></strong> pour que vos achats soient <strong style="color: #1F8D9D">plus simples et plus rapides</strong>. En effet, payer avec son mobile c’est possible au Crédit Agricole et dans ce contexte sanitaire compliqué, c’est plus que rassurant !<br />
+        L’application Ma Carte devient <strong style="color: #1F8D9D">Paiement Mobile<sup>(1)</sup></strong>pour que vos achats soient <strong style="color: #1F8D9D">plus simples et plus rapides.</strong>
         <br />
-        Vous avez <strong style="color: #1F8D9D">toujours accès à la gestion des options</strong> de vos cartes de paiements<sup>(2)</sup>, (augmentation des plafonds, activation/désactivation du sans contact...) et pouvez dorénavant <strong style="color: #1F8D9D">accéder à l’historique</strong> de vos paiements mobiles.
+        <br />
+        Vous avez <strong style="color: #1F8D9D">toujours accès à la gestion des options</strong> de vos cartes de paiements<sup>(2)</sup> (augmentation des plafonds, activation/désactivation des paiements de vente à distance...) mais en plus, vous pouvez maintenant <strong style="color: #1F8D9D">accéder à l’historique de vos paiements mobiles.</strong> 
+        
+
 
 </mj-text>
 </mj-column>  
 </mj-section>
 <mj-row-blocs>
-  <mj-bloc>
+  <mj-bloc width="100%"
+  var-picto="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/coffre.jpg">
     <mj-text color="#fff">
-      <strong>PAYER SANS CONTACT</strong>
-      en magasin avec votre smartphone<sup>(3)</sup> en un clin d’œil et même au-delà de 50€<sup>(4)</sup>.
+      <strong>EFFECTUER VOS ACHATS SUR INTERNET</strong>
+      rapidement et de manière sécurisée, sans avoir à saisir vos coordonnées bancaires sur les sites commerçants proposant le service Paylib.
     </mj-text>
   </mj-bloc>
   <mj-bloc
     var-picto="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/chrono.jpg">
     <mj-text color="#fff">
-      <strong>REMBOURSER INSTANTANÉMENT<sup>(5)</sup></strong>
-      vos proches grâce à leur numéro de téléphone.
-    </mj-text>
-  </mj-bloc>
-  <mj-bloc
-  var-picto="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/coffre.jpg">
-    <mj-text color="#fff">
-      <strong>EFFECTUER VOS ACHATS SUR INTERNET</strong>
-      rapidement et de manière sécurisée, sans avoir à saisir vos coordonnées bancaires sur les sites commerçants proposant le service Paylib.
+      <strong>REMBOURSER INSTANTANÉMENT</strong>
+      vos proches grâce à leur numéro de téléphone.<sup>(3)</sup>
     </mj-text>
   </mj-bloc>
 </mj-row-blocs>
@@ -46,6 +43,15 @@
     text="VOIR LA VIDEO DE PRÉSENTATION"
     href="https://www.credit-agricole.fr/ca-briepicardie/particulier/compte/paiement-mobile/paylib.html"/>
   </mj-row-buttons>
+  <!-- <mj-section>
+    <mj-column>  
+   <mj-text align="center">
+    <a href="https://play.google.com/store/apps/details?id=fr.creditagricole.macarteca&hl=fr">
+      <img src="https://www.credit-agricole.fr/content/dam/assetsca/master/public/commun/images/autre/images/GooglePlay_Logo_214x60.png" alt="Google Play">
+    </a>
+   </mj-text>
+    </mj-column>  
+  </mj-section> -->
   <mj-section>
     <mj-column>  
    <mj-text>
