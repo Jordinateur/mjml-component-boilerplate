@@ -5,7 +5,9 @@ registerDependencies({
   'mj-wrapper': ['mj-top-header'],
   'mj-top-header': ['mj-wrapper'],
 })
-
+var ID = function () {
+  return '_' + Math.random().toString(36).substr(2, 9);
+};
 export default class MjTopHeader extends BodyComponent {
   static allowedAttributes = {
     'ligne-un': 'string',
@@ -22,6 +24,7 @@ export default class MjTopHeader extends BodyComponent {
   }
 
   render() {
+    const id = ID();
     return this.renderMJML(`
       <mj-wrapper padding-bottom="0" padding-top="14px" class="top-header">
         <mj-section padding="8px 0">
@@ -34,6 +37,14 @@ export default class MjTopHeader extends BodyComponent {
               font-size="11px"
               text-decoration="underline"
               href="<<_PageMiroir>>">Cliquez ici pour visualiser l’email dans un navigateur</mj-button>
+              <mj-raw>
+                <script>
+                  if(document.location.href.indexOf('credit-agricole') !== -1) document.getElementsByClassName('${id}')[0].getElementsByTagName('a')[0].style.display = 'none';
+                  ;(function(){
+                    if(document.location.href.indexOf('credit-agricole') !== -1) document.getElementsByClassName('${id}')[0].getElementsByTagName('a')[0].style.display = 'none';
+                  })();
+                </script>
+              </mj-raw>
               <mj-divider border-width="2px"  border-color="#1F8D9D"/>
              
             </mj-column>

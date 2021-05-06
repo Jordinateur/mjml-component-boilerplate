@@ -21,4 +21,17 @@
     CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL BRIE PICARDIE - Société coopérative à capital variable, agréée en tant qu’établissement de crédit, dont le siège social est 500 rue Saint-Fuscien 80095 AMIENS CEDEX 3 - 487 625 436 RCS AMIENS. Société de courtage d’assurances immatriculée au Registre des Intermédiaires en Assurances sous le n° 07 022 607. www.ca-briepicardie.fr – 05/21 
   </mj-text>
 </mj-mentions>
-<mj-footer></mj-footer>
+<mj-footer
+  var-tel="<<LIBELLE_60_4>>",
+  logo-tel="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/telproxi.png",
+  var-agence="<<LIBELLE_60_10>>",
+  logo-agence="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/locaproxi.png",
+  var-email="<<LIBELLE_60_5>>",
+  logo-email="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/emailproxi.png",
+  var-conseiller="<<LIBELLE_60_3>>",
+  var-email-conseiller="<<LIBELLE_60_5>>",
+  var-agence="<<LIBELLE_60_6>>",
+  var-rue="<<LIBELLE_60_8>>",
+  var-cp-ville="<<LIBELLE_60_9>>",
+  var-tel-agence="<<LIBELLE_60_7>>">
+</mj-footer>

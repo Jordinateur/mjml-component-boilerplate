@@ -10,6 +10,7 @@
     "./lib/MjContent.js",
     "./lib/MjMentions.js",
     "./lib/MjFooter.js",
+    "./lib/MjRowBlocs.js",
     "./lib/MjBloc.js"
   ]
 }

@@ -47,7 +47,7 @@ export default class MjCTA extends BodyComponent {
               color="#1F8D9D"
               font-weight="bold"
               text-transform="uppercase"
-              padding="8px 4px">
+              padding="4px 3px">
               ${this.ga('text')}
             </mj-button>
           </mj-column>

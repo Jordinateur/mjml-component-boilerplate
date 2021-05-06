@@ -1,5 +1,5 @@
 <mj-title><<_EmailObjet>></mj-title>
-<mj-preview>preview text</mj-preview>
+<mj-preview></mj-preview>
 <mj-attributes>
     <mj-all font-family="Arial, Helvetica, sans-serif" />
     <mj-body background-color="#ddd" />
@@ -16,6 +16,14 @@
   </mj-selector>
 </mj-html-attributes>
 <mj-breakpoint width="480px" />
+<mj-style>
+@media only screen and (max-width: 480px) { 
+  .hide_on_mobile{ display: none !important; }
+  *[class~=hide_on_mobile] { display: none !important;}
+  .w80p_on_mobile { margin-left: 5% !important;width: 80% !important; }
+  *[class~=w80p_on_mobile] { margin-left: 5% !important;width: 80% !important; }
+}
+</mj-style>
 <mj-style inline="inline">
   sup {
     line-height: 0;

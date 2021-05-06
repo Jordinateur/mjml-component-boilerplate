@@ -26,16 +26,22 @@ export default class MjRowButtons extends BodyComponent {
 
   calcWidth() {
     if (this.countButtons() > 1) return '45%';
-    return '80%';
+    return '65%';
   }
 
   renderButtons() {
     const buttons = []
+    let current = 0
     for (let i = 0; i < this.props.children.length; i += 1) {
-      const c = this.props.children[i];
-      if (!c.attributes.width) c.attributes.width = this.calcWidth()
+      const c = this.props.children[i];      
+      if (!this.props.children[i].attributes.width) this.props.children[i].attributes.width = this.calcWidth()
+      current += parseInt(c.attributes.width)
+      if(current >= 90) {
+        buttons.push('<mj-spacer height="15px" />')
+        current == 0
+      }
       buttons.push(this.renderChildren([c], { rawXML: true }))
-      buttons.push('<mj-column width="8px"><mj-text> </mj-text></mj-column>')
+      buttons.push('<mj-column width="2%"><mj-text> </mj-text></mj-column>')
     }
     return buttons
   }

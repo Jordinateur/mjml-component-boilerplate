@@ -6,7 +6,9 @@ registerDependencies({
   'mj-wrapper': ['mj-header-conseiller'],
   'mj-button': ['mj-image'],
 })
-
+var ID = function () {
+  return '_' + Math.random().toString(36).substr(2, 9);
+};
 export default class MjHeaderConseiller extends BodyComponent {
   static allowedAttributes = {
     'var-tel': 'string',
@@ -30,6 +32,7 @@ export default class MjHeaderConseiller extends BodyComponent {
   }
 
   render() {
+    const id = ID();
     return this.renderMJML(`
         <mj-section background-color="#99CC00" padding="0" text-align="left" class="header-conseiller">
           <mj-group>
@@ -54,14 +57,23 @@ export default class MjHeaderConseiller extends BodyComponent {
               background-color="none"
               padding="0"
               inner-padding="2px 0"
+              css-class="${id}"
               href="mailto:${this.getAttribute('var-email')}">
                 <img src="${this.getAttribute('logo-email')}" />
+                <mj-raw>
+                <script>
+                  ;(function(){
+                    if(document.location.href.indexOf('credit-agricole') !== -1) document.getElementsByClassName('${id}')[0].getElementsByTagName('a')[0].href= 'https://www.credit-agricole.fr/ca-briepicardie/particulier/operations/profil/banque-moi/prendre-rdv.html';
+                    if(document.location.href.indexOf('credit-agricole') === -1) document.getElementsByClassName('${id}')[0].getElementsByTagName('a')[0].href= 'ca-mabanque://make_appointment';
+                  })();
+                </script>
+              </mj-raw>
             </mj-button>
           </mj-column>
-          <mj-column background-color="#99CC00" padding="0" vertical-align="bottom" width="18%" >
+          <mj-column css-class="hide_on_mobile" background-color="#99CC00" padding="0" padding-bottom="5px" vertical-align="middle" width="18%" >
             <mj-image padding="0" padding-bottom="4px" src="${this.getAttribute('logo-conseiller')}" align="right" />
           </mj-column>
-          <mj-column inner-background-color="#fff" padding-left="0" vertical-align="middle" width="67%" background-color="#99CC00" inner-border-right="8px" padding-right="8px">
+          <mj-column css-class="w80p_on_mobile" inner-background-color="#fff" padding-left="0" vertical-align="middle" width="67%" background-color="#99CC00" inner-border-right="8px" padding-right="8px">
             <mj-text color="#1f8d9d" css-class="text-conseiller" padding="12px 8px"><h1 style="font-weight: normal;margin: 0;">${this.getContent()}</h1></mj-text>
           </mj-column>
           </mj-group>

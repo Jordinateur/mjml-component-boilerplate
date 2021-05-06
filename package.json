@@ -15,6 +15,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.13.15",
     "@babel/preset-env": "^7.10.4",
     "@babel/register": "^7.10.4",
     "babel-eslint": "^10.1.0",
@@ -28,9 +29,12 @@
     "gulp-watch": "^5.0.1"
   },
   "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "core-js": "^3.11.1",
     "gulp-server-io": "^1.5.1",
     "he": "^1.2.0",
     "lodash": "^4.17.15",
-    "mjml": "^4.7.1"
+    "mjml": "^4.7.1",
+    "mjml2json": "^1.0.1"
   }
 }

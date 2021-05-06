@@ -93,6 +93,26 @@
         max-width: 67%;
       }
 
+      .mj-column-per-80 {
+        width: 80% !important;
+        max-width: 80%;
+      }
+
+      .mj-column-per-83 {
+        width: 83% !important;
+        max-width: 83%;
+      }
+
+      .mj-column-per-14 {
+        width: 14% !important;
+        max-width: 14%;
+      }
+
+      .mj-column-px-8 {
+        width: 8px !important;
+        max-width: 8px;
+      }
+
       .mj-column-per-92 {
         width: 92% !important;
         max-width: 92%;
@@ -118,7 +138,6 @@
 </head>
 
 <body style="background-color:#dddddd;">
-  <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"> preview text </div>
   <div style="background-color:#dddddd;">
     <!--[if mso | IE]>
       <table
@@ -326,7 +345,7 @@
                                                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
                                                           <tr>
                                                             <td align="right" style="font-size:0px;padding:0;padding-bottom:6px;word-break:break-word;">
-                                                              <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;line-height:1;text-align:right;color:#1F8D9D;">Réglementaire</div>
+                                                              <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;line-height:1;text-align:right;color:#1F8D9D;">Paiement Mobile</div>
                                                             </td>
                                                           </tr>
                                                           <tr>
@@ -538,14 +557,14 @@
               </td>
               
               <td
-                 style="vertical-align:bottom;width:108px;"
+                 style="vertical-align:middle;width:108px;"
               >
               <![endif]-->
-                          <div class="mj-column-per-18 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:18%;">
+                          <div class="mj-column-per-18 mj-outlook-group-fix hide_on_mobile" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:18%;">
                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                               <tbody>
                                 <tr>
-                                  <td style="background-color:#99CC00;vertical-align:bottom;padding:0;">
+                                  <td style="background-color:#99CC00;vertical-align:middle;padding:0;padding-bottom:5px;">
                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
                                       <tr>
                                         <td align="right" style="font-size:0px;padding:0;padding-bottom:4px;word-break:break-word;">
@@ -582,7 +601,7 @@
                                       <tr>
                                         <td align="left" class="text-conseiller" style="font-size:0px;padding:12px 8px;word-break:break-word;">
                                           <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#1f8d9d;">
-                                            <h1 style="font-size: 150%; font-size: 1.5em; font-size: 1.5rem; line-height: 165%; line-height: 1.65em; line-height: 1.65rem; font-weight: normal; margin: 0;">Nous avons besoin d’actualiser rapidement vos coordonnées</h1>
+                                            <h1 style="font-size: 150%; font-size: 1.5em; font-size: 1.5rem; line-height: 165%; line-height: 1.65em; line-height: 1.65rem; font-weight: normal; margin: 0;">Paiement mobile, votre nouveau geste barrière&nbsp;!</h1>
                                           </div>
                                         </td>
                                       </tr>
@@ -674,17 +693,9 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tr>
                               <td align="left" style="font-size:0px;padding:4px 20px;word-break:break-word;">
-                                <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
-                                  <<LIBELLE_60_1>> <<LIBELLE_60_2>>,<br>
-                                      <br>
-                                      <br> La connexion à votre application Ma Banque<sup style="line-height: 0;">1</sup> ne pourra bientôt plus se faire sans vos données actualisées.<br> Ceci est une obligation résultant de la règlementation DSP2 visant à renforcer la sécurité des vos opérations en ligne.<br>
-                                      <br> Or, nous constatons que nous ne disposons pas de votre adresse email et/ou de votre numéro de portable fiabilisé.<br>
-                                      <br> Voici votre situation actuelle : <br> - adresse email : <<EMAIL>><br> - numéro de portable : <<LIBELLE_60_11>><br> - numéro de portable fiabilisé : <<LIBELLE_60_12>><br>
-                                            <br> Nous vous demandons donc de bien vouloir actualiser vos données :<br>
-                                            <br> 1 - Votre adresse email :<br> En vous connectant à votre espace connecté depuis notre site internet.<br> Cliquez ensuite sur votre « Prénom NOM » en haut à droite, puis sur la rubrique « Mes infos personnelles » et « Gérer mes coordonnées ».<br>
-                                            <br> 2 - Votre numéro de portable et/ou sa fiabilisation : en vous rendant en agence (avec ou sans RDV) muni de votre pièce d’identité.<br>
-                                            <br>
-                                </div>
+                                <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Bonjour #LIBELLE_60_1# #LIBELLE_60_2#,<br>
+                                  <br> L’application Ma Carte devient <strong style="color: #1F8D9D">Paiement Mobile<sup style="line-height: 0;">(1)</sup></strong> pour que vos achats soient <strong style="color: #1F8D9D">plus simples et plus rapides</strong>. En effet, payer avec son mobile c’est possible au Crédit Agricole et dans ce contexte sanitaire compliqué, c’est plus que rassurant !<br>
+                                  <br> Vous avez <strong style="color: #1F8D9D">toujours accès à la gestion des options</strong> de vos cartes de paiements<sup style="line-height: 0;">(2)</sup>, (augmentation des plafonds, activation/désactivation du sans contact...) et pouvez dorénavant <strong style="color: #1F8D9D">accéder à l’historique</strong> de vos paiements mobiles.</div>
                               </td>
                             </tr>
                           </table>
@@ -692,6 +703,44 @@
                         <!--[if mso | IE]>
             </td>
           
+        </tr>
+      
+                  </table>
+                <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 class="" width="600px"
+              >
+          
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+              <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+                        <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
             <td
                class="" style="vertical-align:top;width:600px;"
             >
@@ -700,10 +749,196 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tr>
                               <td align="left" style="font-size:0px;padding:4px 20px;word-break:break-word;">
-                                <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;"><br> À bientôt,<br>
-                                  <br>
-                                  <<LIBELLE_60_3>><br> Votre conseiller
+                                <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">Pour profiter de tous les services de l’application Paiement Mobile, il vous suffit de mettre à jour votre application Ma Carte et de vous laisser guider.</div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 class="" width="600px"
+              >
+          
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+              <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:18px 30px;text-align:center;">
+                        <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style=""
+            >
+          <![endif]-->
+                        <div class="mj-column-per-80 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;vertical-align:middle;background-color:#E3E9EC;">
+                          <!--[if mso | IE]>
+        <table
+           bgcolor="#E3E9EC" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        >
+          <tr>
+        
+              <td
+                 style="vertical-align:middle;width:351px;"
+              >
+              <![endif]-->
+                          <div class="mj-column-per-83 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:83%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align:middle;padding:0;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+                                      <tr>
+                                        <td align="center" vertical-align="middle" style="font-size:0px;padding:4px 3px;word-break:break-word;">
+                                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                            <tr>
+                                              <td align="center" role="presentation" style="border:none;border-radius:0;cursor:auto;mso-padding-alt:10px 25px;background:none;" valign="middle">
+                                                <a href="https://www.credit-agricole.fr/ca-briepicardie/particulier/compte/paiement-mobile/paylib.html" style="display:inline-block;background:none;color:#1F8D9D;font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;line-height:120%;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0;" target="_blank"> VOIR LA VIDEO DE PRÉSENTATION </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]>
+              </td>
+              
+              <td
+                 style="vertical-align:middle;width:59px;"
+              >
+              <![endif]-->
+                          <div class="mj-column-per-14 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:14%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align:middle;padding:0;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+                                      <tr>
+                                        <td align="center" vertical-align="middle" style="font-size:0px;padding:0;word-break:break-word;">
+                                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                            <tr>
+                                              <td align="center" role="presentation" style="border:none;border-radius:0;cursor:auto;mso-padding-alt:0;text-align:right;background:none;" valign="middle">
+                                                <a href="https://www.credit-agricole.fr/ca-briepicardie/particulier/compte/paiement-mobile/paylib.html" style="display:inline-block;background:none;color:#1F8D9D;font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;line-height:120%;margin:0;text-decoration:none;text-transform:uppercase;padding:0;mso-padding-alt:0px;border-radius:0;" target="_blank">
+                                                  <img src="https://www.ca-briepicardie.net/Emailing/IMG_PICTOS/fleche_vert.gif" height="49px" width="29px">
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]>
+              </td>
+              
+          </tr>
+          </table>
+        <![endif]-->
+                        </div>
+                        <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="" style="vertical-align:top;width:8px;"
+            >
+          <![endif]-->
+                        <div class="mj-column-px-8 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
                                 </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 class="" width="600px"
+              >
+          
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+              <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+                        <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <div style="font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">À très bientôt,<br> #LIBELLE_60_3#<br> Votre conseiller</div>
                               </td>
                             </tr>
                           </table>
@@ -919,9 +1154,13 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tr>
                               <td align="justify" style="font-size:0px;padding:4px 16px;word-break:break-word;">
-                                <div style="font-family:Arial, Helvetica, sans-serif;font-size:11px;line-height:1;text-align:justify;color:#000000;">(1) Téléchargement et accès gratuits à l’application Ma banque, hors coûts de communication selon opérateurs. L’utilisation de l’application nécessite la détention d’un terminal de communication compatible avec accès à Internet et l’abonnement au service Crédit Agricole En Ligne (service facturé selon le barème tarifaire en vigueur dans votre Caisse régionale).<br>
+                                <div style="font-family:Arial, Helvetica, sans-serif;font-size:11px;line-height:1;text-align:justify;color:#000000;">(1)Téléchargement et accès gratuits de l’application Paiement Mobile, hors coûts de communication selon opérateurs. L’utilisation de l’application est soumise à conditions et nécessite la détention d’une carte bancaire Crédit Agricole, d’un abonnement au service Crédit Agricole En Ligne et d’un terminal de communication compatible avec accès Internet. L’offre Paylib est soumise à conditions et réservée aux titulaires majeurs d’un compte de dépôt, d’une carte bancaire (sauf cartes privatives et cartes de la gamme « Business ») émise par le Crédit agricole attachée audit compte et d’un accès au service de banque en ligne du Crédit Agricole. Paylib permet d’effectuer des paiements sur tous les sites marchands affichant le logo PAYLIB et chez tous les commerçants acceptant le paiement sans contact. L’utilisation de la solution de paiement Paylib nécessite une adhésion spécifique ainsi que la détention d’un smartphone éligible et d’un numéro de téléphone fiabilisé. <br>
+                                  <br> (2)L’application Paiement Mobile vous redirige automatiquement vers les services vous permettant de gérer les options de vos cartes de paiement. <br>
+                                  <br> (3)Disponible uniquement pour les propriétaires de smartphone Android disposant de la technologie NFC (Near Field Communication) pour les paiements de proximité chez les commerçants acceptant (i) la catégorie et la marque de votre carte éligible et (ii) le paiement en mode « sans contact » avec un terminal équipé de la technologie NFC. Attention, certaines limites de paiement peuvent s’appliquer en fonction du pays où vous êtes. <br>
+                                  <br> (4)Les plafonds appliqués sont ceux liés à l’utilisation de votre carte précisés dans le contrat de carte de paiement signé avec votre Caisse régionale. <br>
+                                  <br> (5)Paylib entre amis permet d’effectuer des virements de particuliers à particuliers titulaires d’un compte ouvert dans les livres d’un établissement de crédit situé en France. Dans la limite de 500 € par virement et 900 € par jour. Le transfert peut être instantanément exécuté uniquement si le bénéficiaire est enrôlé ou connu de Paylib. Dans le cas contraire, il sera exécuté sous 3 jours maximum. <br>
                                   <br> En application du Règlement du 27 avril 2016 relatif à la protection des données personnelles, et conformément à la loi Informatique et Libertés n°78-17 du 6 janvier 1978 modifiée vous disposez sur ces données de droits (i) d’accès, (ii) de rectification, (iii) d’effacement, (iv) de limitation et (v) de portabilité de vos données vers un prestataire tiers le cas échéant. Vous pouvez en outre vous opposer à tout moment au traitement de vos données ainsi qu’à l’envoi de nos messages. Vous pourrez faire valoir ces droits en contactant notre DPO à : dpo@ca-briepicardie.fr ou à DPO 500 rue Saint-Fuscien 80095 AMIENS CEDEX 3. Vous pouvez également introduire une réclamation auprès de la CNIL. <br>
-                                  <br> CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL BRIE PICARDIE - Société coopérative à capital variable, agréée en tant qu’établissement de crédit, dont le siège social est 500 rue Saint-Fuscien 80095 AMIENS CEDEX 3 - 487 625 436 RCS AMIENS. Société de courtage d’assurances immatriculée au Registre des Intermédiaires en Assurances sous le n° 07 022 607. www.ca-briepicardie.fr – 02/20</div>
+                                  <br> CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL BRIE PICARDIE - Société coopérative à capital variable, agréée en tant qu’établissement de crédit, dont le siège social est 500 rue Saint-Fuscien 80095 AMIENS CEDEX 3 - 487 625 436 RCS AMIENS. Société de courtage d’assurances immatriculée au Registre des Intermédiaires en Assurances sous le n° 07 022 607. www.ca-briepicardie.fr – 05/21</div>
                               </td>
                             </tr>
                           </table>
